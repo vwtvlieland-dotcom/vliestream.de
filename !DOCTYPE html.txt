@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vliestream - Individuelle Stream Designs</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* Leichter Hintergrund */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-lg sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-purple-600">
+                ✨ Vliestream
+            </div>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6 font-medium">
+                <a href="#hero" class="text-gray-600 hover:text-purple-600 transition duration-300">Start</a>
+                <a href="#inspiration" class="text-gray-600 hover:text-purple-600 transition duration-300">Galerie</a>
+                <a href="#services" class="text-gray-600 hover:text-purple-600 transition duration-300">Vorteile</a>
+                <a href="#pricing" class="text-gray-600 hover:text-purple-600 transition duration-300">Preise</a>
+                <a href="#about" class="text-gray-600 hover:text-purple-600 transition duration-300">Warum Wir?</a>
+                <a href="#contact" class="px-4 py-2 bg-purple-600 text-white rounded-lg shadow-md hover:bg-purple-700 transition duration-300">Anfrage</a>
+            </nav>
+            <!-- Mobile Menu Button (Hamburger) -->
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100 transition duration-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <a href="#hero" class="block py-3 px-4 text-center text-gray-600 hover:bg-purple-50 hover:text-purple-600 transition duration-300 border-b">Start</a>
+            <a href="#inspiration" class="block py-3 px-4 text-center text-gray-600 hover:bg-purple-50 hover:text-purple-600 transition duration-300 border-b">Galerie</a>
+            <a href="#services" class="block py-3 px-4 text-center text-gray-600 hover:bg-purple-50 hover:text-purple-600 transition duration-300 border-b">Vorteile</a>
+            <a href="#pricing" class="block py-3 px-4 text-center text-gray-600 hover:bg-purple-50 hover:text-purple-600 transition duration-300 border-b">Preise</a>
+            <a href="#about" class="block py-3 px-4 text-center text-gray-600 hover:bg-purple-50 hover:text-purple-600 transition duration-300 border-b">Warum Wir?</a>
+            <a href="#contact" class="block py-3 px-4 text-center bg-purple-600 text-white hover:bg-purple-700 transition duration-300">Anfrage</a>
+        </div>
+    </header>
+
+    <!-- Hero Section (Angepasste Farben für Twitch-Thema) -->
+    <section id="hero" class="bg-gradient-to-r from-purple-700 to-pink-500 py-20 sm:py-32 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 leading-tight">
+                Ihr Stream. Ihre Marke. <br class="hidden sm:inline"> Atemberaubende Twitch Overlays.
+            </h1>
+            <p class="text-xl sm:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
+                Verwandeln Sie Ihren Kanal in ein professionelles Erlebnis, das Zuschauer bindet. Wir designen individuelle Komplettpakete.
+            </p>
+            <button onclick="document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' });"
+                class="px-8 py-4 bg-yellow-400 text-purple-900 font-bold rounded-full text-lg shadow-xl hover:bg-yellow-300 transform hover:scale-105 transition duration-300 ease-in-out">
+                Zu den Design-Paketen &rarr;
+            </button>
+        </div>
+    </section>
+
+    <!-- NEUER ABSCHNITT: Design-Inspiration (Bilder) -->
+    <section id="inspiration" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-center text-gray-800 mb-8">Ein Blick auf unsere Kreativität</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+                
+                <!-- Bild 1 - PFAD FÜR HOSTING GEÄNDERT -->
+                <div class="rounded-lg shadow-xl overflow-hidden transform hover:scale-[1.03] transition duration-300">
+                    <img src="images/Screenshot_2025-10-07_161452.jpg" 
+                         alt="Beispiel: Pause-Bildschirm" 
+                         class="w-full h-auto object-cover aspect-video">
+                </div>
+
+                <!-- Bild 2 - PFAD FÜR HOSTING GEÄNDERT -->
+                <div class="rounded-lg shadow-xl overflow-hidden transform hover:scale-[1.03] transition duration-300">
+                    <img src="images/Screenshot_2025-10-07_161619.jpg" 
+                         alt="Beispiel: Starting Soon Screen" 
+                         class="w-full h-auto object-cover aspect-video">
+                </div>
+
+                <!-- Bild 3 - PFAD FÜR HOSTING GEÄNDERT -->
+                <div class="rounded-lg shadow-xl overflow-hidden transform hover:scale-[1.03] transition duration-300">
+                    <img src="images/Screenshot_2025-10-07_161522.jpg" 
+                         alt="Beispiel: Haupt-Gameplay-Overlay" 
+                         class="w-full h-auto object-cover aspect-video">
+                </div>
+
+                <!-- Bild 4 - PFAD FÜR HOSTING GEÄNDERT -->
+                <div class="rounded-lg shadow-xl overflow-hidden transform hover:scale-[1.03] transition duration-300">
+                    <img src="images/Screenshot_2025-10-07_161735.jpg" 
+                         alt="Beispiel: Countdown Screen" 
+                         class="w-full h-auto object-cover aspect-video">
+                </div>
+            </div>
+            <p class="text-center text-sm text-gray-500 mt-6 italic">Diese Designs dienen als Inspiration für Ihr individuelles Projekt.</p>
+        </div>
+    </section>
+    
+    <!-- Services Section (Overlay-Elemente) -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-center mb-4">Ihre Vorteile im Überblick</h2>
+            <p class="text-xl text-center text-gray-500 mb-12">Professionelle Elemente, die Ihren Stream hervorheben.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Service 1: Alerts & Screens -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-purple-500 mb-4">
+                        <!-- Screen Icon (Updated from Web Design) -->
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1v-3.25M7 11h10M4 7h16a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V9a2 2 0 012-2z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Komplett-Pakete & Alerts</h3>
+                    <p class="text-gray-600">Von Offline-Screens bis zu "Starting Soon"-Bildschirmen und dynamischen Follow/Sub Alerts – alles im einheitlichen Look.</p>
+                </div>
+
+                <!-- Service 2: KEINE ANIMATIONEN -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-purple-500 mb-4">
+                        <!-- Strategy Icon (Updated to represent Static Designs) -->
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Statische Gestaltung</h3>
+                    <p class="text-gray-600">Wir fokussieren uns auf hochauflösende, professionelle statische Grafiken für maximale Kompatibilität und Performance.</p>
+                </div>
+
+                <!-- Service 3: Branding -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-purple-500 mb-4">
+                        <!-- Strategy Icon (Updated to represent branding) -->
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.592 1L19 18H5l1.408-1.592A3.978 3.978 0 0112 8z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Logo & Kanal-Branding</h3>
+                    <p class="text-gray-600">Wir entwickeln ein einzigartiges Logo, Farbkonzept und Design-Manual, das zu Ihrer Streamer-Persönlichkeit passt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section (Preismodelle mit Euro und ohne Animationen) -->
+    <section id="pricing" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-center mb-4">Unsere Preismodelle</h2>
+            <p class="text-xl text-center text-gray-500 mb-12">Wählen Sie das Paket, das am besten zu Ihren Stream-Zielen passt.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Paket 1: Starter -->
+                <div class="bg-white p-8 rounded-xl shadow-2xl border-2 border-gray-100 flex flex-col">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-2">Starter</h3>
+                    <p class="text-gray-500 mb-6">Für Einsteiger und Budget-Streamer.</p>
+                    <div class="text-5xl font-extrabold text-purple-600 mb-6">
+                        0,99 € <span class="text-xl font-normal text-gray-500">einmalig</span>
+                    </div>
+                    <ul class="space-y-3 flex-grow mb-8">
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Offline-Screen (statisch)
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Basis Stream-Overlay
+                        </li>
+                    </ul>
+                    <a href="#contact" class="w-full text-center py-3 bg-purple-100 text-purple-600 font-bold rounded-lg hover:bg-purple-200 transition duration-300">
+                        Starter wählen
+                    </a>
+                </div>
+
+                <!-- Paket 2: Pro (Empfohlen) -->
+                <div class="bg-white p-8 rounded-xl shadow-2xl border-4 border-purple-600 flex flex-col transform scale-105">
+                    <div class="text-sm font-semibold uppercase tracking-wider text-white bg-purple-600 px-3 py-1 rounded-full absolute -top-3 left-1/2 transform -translate-x-1/2">
+                        Beliebt
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-800 mb-2">Pro</h3>
+                    <p class="text-gray-500 mb-6">Das Komplettpaket für den professionellen Stream.</p>
+                    <div class="text-5xl font-extrabold text-purple-600 mb-6">
+                        2,99 € <span class="text-xl font-normal text-gray-500">einmalig</span>
+                    </div>
+                    <ul class="space-y-3 flex-grow mb-8">
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            **3 Screens** (Start, BRB, Ende)
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Detailliertes Haupt-Overlay
+                        </li>
+                    </ul>
+                    <a href="#contact" class="w-full text-center py-3 bg-purple-600 text-white font-bold rounded-lg hover:bg-purple-700 transition duration-300">
+                        Pro-Paket anfragen
+                    </a>
+                </div>
+
+                <!-- Paket 3: Custom -->
+                <div class="bg-white p-8 rounded-xl shadow-2xl border-2 border-gray-100 flex flex-col">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-2">Custom</h3>
+                    <p class="text-gray-500 mb-6">Individuelle Wünsche und Markenentwicklung.</p>
+                    <div class="text-5xl font-extrabold text-purple-600 mb-6">
+                        4,99 € <span class="text-xl font-normal text-gray-500">einmalig</span>
+                    </div>
+                    <ul class="space-y-3 flex-grow mb-8">
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Alle Pro-Features
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            **Individuelles Logo-Design**
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Unbegrenzte Revisionen
+                        </li>
+                    </ul>
+                    <a href="#contact" class="w-full text-center py-3 bg-purple-100 text-purple-600 font-bold rounded-lg hover:bg-purple-200 transition duration-300">
+                        Maßgeschneiderte Anfrage
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section (Fokus auf Streamer-Erfahrung) -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Von Streamern für Streamer</h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+                Wir sind selbst leidenschaftliche Mitglieder der Gaming- und Streaming-Community. Wir wissen, wie wichtig ein professionelles Auftreten ist und welche technischen Anforderungen Stream-Elemente erfüllen müssen (OBS, Streamlabs, etc.). Unsere Designs sind nicht nur schön, sondern auch **performance-optimiert**. Vertrauen Sie auf Experten, die verstehen, wie man aus einem Hobby eine professionelle Marke macht.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-center mb-4">Ihre Design-Anfrage</h2>
+            <p class="text-xl text-center text-gray-500 mb-12">Beschreiben Sie Ihr Projekt und wir melden uns mit einem individuellen Angebot.</p>
+            
+            <form class="space-y-6 bg-white p-8 rounded-xl shadow-2xl">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Ihr Streamer-Name (oder Name)</label>
+                    <input type="text" id="name" name="name" placeholder="GamerTag / Max Mustermann"
+                        class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-purple-500 focus:border-purple-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">E-Mail-Adresse</label>
+                    <input type="email" id="email" name="email" placeholder="kontakt@twitch-kanal.de"
+                        class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-purple-500 focus:border-purple-500">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Details zu Ihrem Projekt</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Welche Spiele streamen Sie? Welche Elemente (Screens, Alerts, etc.) benötigen Sie?"
+                        class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-purple-500 focus:border-purple-500"></textarea>
+                </div>
+                <button type="submit"
+                    class="w-full py-3 bg-purple-600 text-white font-bold rounded-lg shadow-lg hover:bg-purple-700 transition duration-300 transform hover:scale-[1.01]">
+                    Anfrage Senden
+                </button>
+                <div id="contact-message" class="text-center text-sm text-green-600 mt-4 hidden">Vielen Dank! Wir melden uns in Kürze bei Ihnen.</div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2025 Vliestream. Alle Rechte vorbehalten.</p>
+            <div class="mt-2 space-x-4">
+                <a href="#" class="hover:text-purple-400 transition duration-300">Impressum</a>
+                <a href="#" class="hover:text-purple-400 transition duration-300">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Form Submission -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        // Toggle mobile menu visibility
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Simple form submission handler (prevents page reload and shows a success message)
+        const contactForm = document.querySelector('#contact form');
+        const contactMessage = document.getElementById('contact-message');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Verhindert das Neuladen der Seite
+            
+            // Führt eine einfache "Erfolgs"-Meldung aus, da kein Backend vorhanden ist
+            contactForm.reset();
+            contactMessage.classList.remove('hidden');
+            
+            setTimeout(() => {
+                contactMessage.classList.add('hidden');
+            }, 4000);
+        });
+        
+        // Hide mobile menu after clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
